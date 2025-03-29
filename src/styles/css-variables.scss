@@ -1,0 +1,76 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// ---------------------------------------------------------------
+//  CSS Variables
+// ---------------------------------------------------------------
+:root {
+  // size
+  --max-width: #{$max-width};
+
+  // padding
+  --padding-y: 4.8rem;
+  --padding-x: 2.4rem;
+
+  // color
+  --color-black: #000;
+  --color-dark: #161616;
+  --color-darker: #333;
+  --color-muted: #666;
+  --color-gray: #eee;
+  --color-link: #1976d2;
+  --color-border: #e1e1e1;
+  --color-link-dark: #1565c0;
+  --color-danger: #f44336;
+  --color-more-danger: #f72314;
+  --color-snow: #f6f7f8;
+  --color-white: #fff;
+  --color-hover-bg: var(--color-snow);
+
+  // theme color
+  --background: var(--color-white);
+  --foreground: var(--color-dark);
+
+  // font-family
+  --font-sans:
+    '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック', 'Yu Gothic',
+    '游ゴシック体', YuGothic, sans-serif;
+  --font-serif: var(--font-noto-serif);
+
+  // font-weight
+  --font-weight-bold: 700;
+
+  // font-size
+  --text-s: 1.2rem;
+  --text-sm: 1.3rem;
+  --text-base: 1.4rem;
+  --text-m: 1.5rem;
+  --text-l: 1.6rem;
+  --text-xl: 2rem;
+
+  // line-height
+  --leading-loose: 2.2;
+  --leading-relaxed: 2;
+  --leading-normal: 1.8;
+  --leading-tight: 1.6;
+  --leading-minimal: 1.2;
+  --leading-none: 1;
+
+  // tracking
+  --tracking-base: 0.06em;
+
+  // easing
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  @include min {
+    --padding-y: 8rem;
+    --padding-x: 8rem;
+    --text-s: 1.2rem;
+    --text-sm: 1.4rem;
+    --text-base: 1.6rem;
+    --text-m: 1.8rem;
+    --text-l: 2.4rem;
+    --text-xl: 2.8rem;
+  }
+}

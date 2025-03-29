@@ -1,0 +1,18 @@
+.logo {
+  font-family: var(--font-serif);
+  font-size: 3.2rem;
+  font-weight: 200;
+  line-height: 1.1;
+}
+.menu {
+  margin-top: 3rem;
+}
+.menuList {
+  display: grid;
+  gap: 0.4rem;
+}
+.menuLink {
+  @include hover {
+    background-color: var(--color-gray);
+  }
+}

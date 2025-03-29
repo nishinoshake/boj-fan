@@ -1,0 +1,12 @@
+.container {
+  display: block;
+  position: relative;
+  &:before {
+    display: block;
+    padding-top: 56.25%;
+    content: '';
+  }
+  iframe {
+    @include fit-full;
+  }
+}

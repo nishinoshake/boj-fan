@@ -1,0 +1,7 @@
+.container {
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}

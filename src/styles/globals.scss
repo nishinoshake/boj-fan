@@ -1,0 +1,31 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'reset' as *;
+@use 'css-variables' as *;
+
+// ---------------------------------------------------------------
+//  Base
+// ---------------------------------------------------------------
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-base);
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans);
+  font-feature-settings: 'palt';
+  -webkit-font-smoothing: antialiased;
+}
+.pc {
+  @include max {
+    display: none !important;
+  }
+}
+.sp {
+  @include min {
+    display: none !important;
+  }
+}

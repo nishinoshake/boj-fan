@@ -1,0 +1,20 @@
+.info {
+  margin-top: 4rem;
+}
+.infoTable {
+  display: grid;
+  grid-template-columns: 9.6rem 1fr;
+  border-top: 1px solid var(--color-border);
+  dt,
+  dd {
+    padding: 1.2rem 0.6rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  a {
+    color: var(--color-link);
+    text-decoration: underline;
+    @include hover {
+      text-decoration: none;
+    }
+  }
+}

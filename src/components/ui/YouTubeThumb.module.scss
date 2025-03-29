@@ -1,0 +1,47 @@
+.container {
+  display: block;
+  position: relative;
+  border: 1px solid var(--color-border);
+  border-radius: 0.6rem;
+  overflow: hidden;
+  cursor: pointer;
+  &:before {
+    display: block;
+    padding-top: 56.25%;
+    content: '';
+  }
+  img {
+    border-radius: 0.6rem;
+    @include fit-full;
+  }
+  @include hover {
+    .playIcon {
+      transform: scale(1.2);
+    }
+  }
+}
+.playIcon {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  inset: 0;
+  transition: transform 600ms var(--ease-out-expo);
+  &:before {
+    content: '';
+    border-radius: 50%;
+    background-color: var(--color-white);
+    @include fit-full;
+  }
+  &:after {
+    width: 40%;
+    height: 40%;
+    background-color: var(--color-darker);
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    position: absolute;
+    transform: translateX(10%);
+    content: '';
+    margin: auto;
+    inset: 0;
+  }
+}
