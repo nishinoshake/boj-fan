@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import styles from './page.module.scss'
 import HeadingIndex from '@/components/ui/HeadingIndex'
 import YouTubeThumb from '@/components/ui/YouTubeThumb'
@@ -57,7 +56,7 @@ export default function () {
         <YouTubeThumb slug={meeting.youtube} />
       </div>
       <MeetingInfo meeting={meeting} />
-      <MeetingQa meeting={meeting} />
+      <MeetingQa />
     </div>
   )
 }

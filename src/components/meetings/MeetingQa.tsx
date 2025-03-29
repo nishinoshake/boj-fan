@@ -1,12 +1,7 @@
-import { Meeting } from '@/types/meeting'
 import styles from './MeetingQa.module.scss'
 import Image from 'next/image'
 
-type Props = {
-  meeting: Meeting
-}
-
-export default function (props: Props) {
+export default function () {
   return (
     <div className={styles.qa}>
       <h2 className={styles.heading}>主な質疑応答</h2>
