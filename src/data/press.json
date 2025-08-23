@@ -1,0 +1,64 @@
+{
+  "press": [
+    {
+      "id": "kanji",
+      "name": "幹事社",
+      "thumbnail": null
+    },
+    {
+      "id": "nikkei",
+      "name": "日本経済新聞",
+      "thumbnail": "/press/nikkei.jpg"
+    },
+    {
+      "id": "reuters",
+      "name": "ロイター",
+      "thumbnail": "/press/reuters.jpg"
+    },
+    {
+      "id": "bloomberg",
+      "name": "ブルームバーグ",
+      "thumbnail": "/press/bloomberg.jpg"
+    },
+    {
+      "id": "kyodo",
+      "name": "共同通信",
+      "thumbnail": "/press/kyodo.jpg"
+    },
+    {
+      "id": "asahi",
+      "name": "朝日新聞",
+      "thumbnail": "/press/asahi.jpg"
+    },
+    {
+      "id": "mainichi",
+      "name": "毎日新聞",
+      "thumbnail": "/press/mainichi.jpg"
+    },
+    {
+      "id": "yomiuri",
+      "name": "読売新聞",
+      "thumbnail": "/press/yomiuri.jpg"
+    },
+    {
+      "id": "sankei",
+      "name": "産経新聞",
+      "thumbnail": "/press/sankei.jpg"
+    },
+    {
+      "id": "jiji",
+      "name": "時事通信",
+      "thumbnail": "/press/jiji.jpg"
+    },
+    {
+      "id": "nhk",
+      "name": "NHK",
+      "thumbnail": "/press/nhk.jpg"
+    },
+    {
+      "id": "tv-tokyo",
+      "name": "テレビ東京",
+      "thumbnail": "/press/tv-tokyo.jpg"
+    }
+  ]
+}

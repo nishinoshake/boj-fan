@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for:*)",
+      "Bash(do echo \"Converting $file to JPG and resizing to 256x256...\")",
+      "Bash(sips:*)",
+      "Bash(rm:*)",
+      "Bash(done)",
+      "Bash(mv:*)"
+    ],
+    "deny": []
+  }
+}
