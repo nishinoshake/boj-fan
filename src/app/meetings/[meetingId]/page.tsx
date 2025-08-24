@@ -7,6 +7,7 @@ import YouTubeThumb from '@/components/ui/YouTubeThumb'
 import MeetingInfo from '@/components/meetings/MeetingInfo'
 import MeetingQa from '@/components/meetings/MeetingQa'
 import Qa from '@/components/meetings/Qa'
+import QaList from '@/components/meetings/QaList'
 
 
 type Props = {
@@ -25,11 +26,6 @@ type MeetingFrontmatter = {
     name: string
     link: string
   }>
-  qa: Array<{
-    type: string
-    name: string
-    body: string
-  }>
 }
 
 export default async function MeetingPage({ params }: Props) {
@@ -46,6 +42,7 @@ export default async function MeetingPage({ params }: Props) {
         components: {
           MeetingQa,
           Qa,
+          QaList
         },
         options: {
           parseFrontmatter: true,
@@ -54,9 +51,9 @@ export default async function MeetingPage({ params }: Props) {
 
       return (
         <div className={styles.root}>
-          <HeadingIndex heading={frontmatter.title} />
-          <div className={styles.movie}>
-            <YouTubeThumb slug={frontmatter.youtube} />
+          <YouTubeThumb slug={frontmatter.youtube} />
+          <div className={styles.heading}>
+            <HeadingIndex heading={frontmatter.title} />
           </div>
           <MeetingInfo meeting={frontmatter} />
           <div>{content}</div>

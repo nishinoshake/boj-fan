@@ -7,5 +7,21 @@
   "[markdown]": {
     "editor.formatOnSave": false
   },
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "files.associations": {
+    "*.mdx": "mdx"
+  },
+  "emmet.includeLanguages": {
+    "mdx": "javascriptreact"
+  },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.suggest.autoImports": true,
+  "typescript.validate.enable": true,
+  "mdx.validate.validateFileLinks": false,
+  "mdx.trace.server": "verbose",
+  "mdx.server.enable": true,
+  "mdx.typescript.enabled": true
 }

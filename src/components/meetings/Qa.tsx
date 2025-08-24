@@ -1,16 +1,16 @@
 import styles from './MeetingQa.module.scss'
 import Image from 'next/image'
-import pressData from '@/data/press.json'
-import membersData from '@/data/members.json'
+import { pressData, type PressId } from '@/data/press'
+import { membersData, type MemberId } from '@/data/members'
 
-type Props = {
-  type: 'q' | 'a'
-  id: string
+type Props<T extends 'q' | 'a'> = {
+  type: T
+  id: T extends 'q' ? PressId : MemberId
   name?: string
   children: React.ReactNode
 }
 
-export default function QaItem({ type, id, name, children }: Props) {
+export default function QaItem<T extends 'q' | 'a'>({ type, id, name, children }: Props<T>) {
   const isQuestion = type === 'q'
   
   if (isQuestion) {

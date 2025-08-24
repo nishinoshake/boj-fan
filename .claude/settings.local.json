@@ -6,7 +6,8 @@
       "Bash(sips:*)",
       "Bash(rm:*)",
       "Bash(done)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }
