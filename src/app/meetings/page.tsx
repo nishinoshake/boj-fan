@@ -2,7 +2,6 @@ import Link from 'next/link'
 import styles from './page.module.scss'
 import HeadingIndex from '@/components/ui/HeadingIndex'
 import { getAllMeetings } from '@/lib/meetings'
-import Qa from '@/components/meetings/Qa'
 
 export default function () {
   const meetings = getAllMeetings()

@@ -13,42 +13,5 @@
 }
 .qaList {
   display: grid;
-  gap: 2rem;
-}
-.qaItem {
-  display: grid;
-  grid-template-columns: 6rem 1fr;
-  align-items: flex-start;
-  gap: 2rem;
-}
-.qaFigure {
-  width: 100%;
-}
-.qaFigureMember {
-  img {
-    border-radius: 50%;
-  }
-}
-.qaFigureName {
-  border-radius: 50%;
-  background-color: var(--foreground);
-  width: 6rem;
-  height: 6rem;
-  font-size: var(--text-m);
-  color: var(--background);
-  @include flex-center;
-}
-.qaBody {
-  display: grid;
-  gap: 0.8rem;
-}
-.qaName {
-  line-height: var(--leading-tight);
-  span {
-    display: inline-block;
-    border-bottom: 1px solid currentColor;
-  }
-}
-.qaText {
-  text-align: justify;
+  gap: 2.4rem;
 }

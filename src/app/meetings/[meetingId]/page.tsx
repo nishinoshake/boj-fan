@@ -6,7 +6,8 @@ import HeadingIndex from '@/components/ui/HeadingIndex'
 import YouTubeThumb from '@/components/ui/YouTubeThumb'
 import MeetingInfo from '@/components/meetings/MeetingInfo'
 import MeetingQa from '@/components/meetings/MeetingQa'
-import Qa from '@/components/meetings/Qa'
+import Question from '@/components/qa/Question'
+import Answer from '@/components/qa/Answer'
 
 
 type Props = {
@@ -40,7 +41,8 @@ export default async function MeetingPage({ params }: Props) {
         source,
         components: {
           MeetingQa,
-          Qa
+          Question,
+          Answer
         },
         options: {
           parseFrontmatter: true,

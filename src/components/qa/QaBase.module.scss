@@ -1,0 +1,35 @@
+.qaItem {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  align-items: flex-start;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.qaFigure {
+  width: 100%;
+}
+.qaFigureMember {
+  img {
+    border-radius: 50%;
+  }
+}
+.qaFigureName {
+  border-radius: 50%;
+  background-color: var(--foreground);
+  width: 5rem;
+  height: 5rem;
+  color: var(--background);
+  @include flex-center;
+}
+.qaBody {
+  display: grid;
+  gap: 0.4rem;
+  padding-top: 0.3em;
+}
+.qaName {
+  line-height: var(--leading-tight);
+}
+.qaText {
+  color: var(--color-darker);
+  text-align: justify;
+}

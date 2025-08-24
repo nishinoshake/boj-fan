@@ -15,7 +15,8 @@
   // color
   --color-black: #000;
   --color-dark: #161616;
-  --color-darker: #333;
+  --color-darker: #2a2a2a;
+  --color-light: #444;
   --color-muted: #666;
   --color-gray: #eee;
   --color-link: #1976d2;
@@ -38,7 +39,9 @@
   --font-serif: var(--font-noto-serif);
 
   // font-weight
-  --font-weight-bold: 700;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
 
   // font-size
   --text-s: 1.2rem;
