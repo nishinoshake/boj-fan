@@ -7,7 +7,6 @@ import YouTubeThumb from '@/components/ui/YouTubeThumb'
 import MeetingInfo from '@/components/meetings/MeetingInfo'
 import MeetingQa from '@/components/meetings/MeetingQa'
 import Qa from '@/components/meetings/Qa'
-import QaList from '@/components/meetings/QaList'
 
 
 type Props = {
@@ -41,8 +40,7 @@ export default async function MeetingPage({ params }: Props) {
         source,
         components: {
           MeetingQa,
-          Qa,
-          QaList
+          Qa
         },
         options: {
           parseFrontmatter: true,
