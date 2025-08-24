@@ -49,7 +49,7 @@ export default function QaItem<T extends 'q' | 'a'>({ type, id, name, children }
     return
   }
 
-  const displayName = member?.nickname || member?.name || id
+  const displayName = member?.nickname || ''
   
   return (
     <li className={styles.qaItem}>

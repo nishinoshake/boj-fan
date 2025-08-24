@@ -8,7 +8,7 @@ type Props = {
 
 async function getQaData(meetingId: string): Promise<Qa[]> {
   try {
-    const module = await import(`@/data/meetings/meeting-qa-${meetingId}`)
+    const module = await import(`@/data/meetings/meeting-qa-${meetingId}`) as { [key: string]: Qa[] }
 
     return module[`meetingQa${meetingId}`] || []
   } catch (error) {

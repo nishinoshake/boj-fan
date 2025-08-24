@@ -1,4 +1,3 @@
-import Qa from '@/components/meetings/Qa'
 import styles from './MeetingQa.module.scss'
 
 type Props = {
